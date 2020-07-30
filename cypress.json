@@ -1,0 +1,6 @@
+{
+    "watchForFileChanges": false,
+    "baseUrl": "https://www.amazon.com/",
+    "viewportWidth": 1000,
+    "viewportHeight": 660
+}
