@@ -2,10 +2,11 @@ var AmazonHomePage = function(cy) {
     this.cy = cy
 
     const hamburgerMenuButton = '#nav-hamburger-menu'
-    const booksCatButton = 'Kindle E-readers & Books'
-    const kindlePaperwhiteCatButton = 'Kindle Paperwhite'
+    const booksCatText = 'Kindle E-readers & Books'
+    const kindlePaperwhiteCatText = 'Kindle Paperwhite'
     const searchInputBox = '#twotabsearchtextbox'
     const cartCountElement = '#nav-cart-count'
+    const signInButton = '#nav-link-accountList'
 
     this.visit = function () {
         cy.visit('/')
@@ -18,14 +19,15 @@ var AmazonHomePage = function(cy) {
     }
 
     this.clickOnBooksCat = function () {
-        cy.contains(booksCatButton).click()
-
-        this.waitForMenuToExpand()
+        this.clickOnCategory(booksCatText)
     }
 
     this.clickOnKindlePaperwhiteCat = function () {
-        cy.contains(kindlePaperwhiteCatButton).click()
+        this.clickOnCategory(kindlePaperwhiteCatText)
+    }
 
+    this.clickOnCategory = function (string) {
+        cy.contains(string).click()
         this.waitForMenuToExpand()
     }
 
@@ -44,7 +46,7 @@ var AmazonHomePage = function(cy) {
     }
 
     this.clickOnSignIn = function () {
-        cy.get('#nav-link-accountList').click()
+        cy.get(signInButton).click()
     }
 };
 
