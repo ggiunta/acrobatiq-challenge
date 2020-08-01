@@ -1,5 +1,5 @@
 {
-  "name": "pager-challenge",
+  "name": "acrobatiq-challenge",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ggiunta/pager-challenge.git"
+    "url": "git+https://github.com/ggiunta/acrobatiq-challenge.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ggiunta/pager-challenge/issues"
+    "url": "https://github.com/ggiunta/acrobatiq-challenge/issues"
   },
-  "homepage": "https://github.com/ggiunta/pager-challenge#readme",
+  "homepage": "https://github.com/ggiunta/acrobatiq-challenge#readme",
   "devDependencies": {
     "cypress": "^4.7.0"
   }
